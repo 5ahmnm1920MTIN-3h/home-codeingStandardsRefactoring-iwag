@@ -1,65 +1,31 @@
-# Santa Run
+# Ausarbeitung Refactoring
 
-### Project description: 
-This is a simple 2D side-scroll game. The Santa runs from left to right and has to avoid some obstacles by jumping over them.
-The game ends when the Santa hits an obstacle.  The goal is to avoid as many obstacles as possible.
+## Definition Refactoring
+Als "Refactoring" bezeichnet man den Prozess, den Code effizienter zu gestalten, wobei er auch leserlicher und somit leichter verwendbar wird. 
 
-### Development platform: 
-Windows 10, Unity version 2019.1.14f1, Visual Studio Community 2017, Scripting Runtime Version: .NET 4.0
+## Vor- und Nachteile von Refactoring
 
-### Target platform: 
-WebGl and Standalone, RefRes: 1920 * 1080
+### Vorteile
+ - schneller verarbeitbar für Maschine
+ - leichter zum Einfinden für andere Contributors
 
+### Nachteile
+- mehr Arbeitsaufwand
+- möglicherweise hierdurch Einbringung von Fehlern
 
-### Visuals: 
-<div>
-<img src = "./Screenshots/sketch-SantaRun.JPG" width = "500">
-</div>
+## Refactoring-Schritte
+ - Testcase definieren  
+ - funktioniert Programm? 
+ - Beseitigung etwaiger Codesmells  
+ - Testcase: testen, ob alles funktioniert wie zuvor
+ - ja -> committen
 
-[![SANTA RUN](https://i9.ytimg.com/vi/2C74XxBkFfI/mq1.jpg?sqp=CNWnze8F&rs=AOn4CLBrmO-tJ3gQ2BNeMxvrmQcsIhhcgQ)](https://www.youtube.com/embed/2C74XxBkFfI "Santa RUN")
+## Prinzipien von gutem Code
+ - DRY -Don’t Repeat Yourself
+ - KISS -Keep it Simple
+ - StupidYAGNI -You Ain’t Gonna Need Principle of least Astonishment 
+ - SoC-Separation of Concerns
 
-https://www.youtube.com/embed/2C74XxBkFfI
+## Code Smells
+Als sogenannte "Code Smells" bezeichnet man allgemein Code, der nicht sinnvoll strukturiert ist. Darunter fallen etwa "Magical Strings" und "Magical Values" (plötzlich auftauchende, hardgecodete Werte im Code) oder überflüssige (z.B. leere) Methoden.
 
-### Necessary setup/execution steps: 
-For playing the game go to: 
-* WebGL: https://hs-teaching.github.io/WegGL-SantaRun/
-* Standalone (.exe): Clone project and publish as Standalone
-
-For development: Clone this project. 
-
-### Third party material: 
-* This game is based on the game Santa Run developed by Raja Biswas in the Udemy-course Unity 2018 Game Developmen by Example 
-[Unity 2018 Game Development by Example](https://www.udemy.com/course/unity-2d-game-development-by-example/).
-* Sprites are used from https://www.gameart2d.com/santa-claus-free-sprites.html
-
-
-### Project state: 
-Program is working correctly, no errors, refactoring is needed.
-Refactoring needed: 
-* del not used namespaces
-* del unused variables
-* del needless debugs
-* del needless comments
-* del unused methods
-* rename variables (coding standards)
-* rename methods (coding standards)
-* fix poor conditional clauses
-* fix poor formating
-* replace magic string
-* replace magic number
-
-### Limitations: 
-Only one level is implemented. 
-
-### Lessons Learned: 
-* Create 2D Scenes
-* Use Quads for moving Backgrounds (Textures instead of Sprites)
-* Use Particle System for snowing effect.
-* Use Scene Management for switching between Scenes
-* Create and control Animations (Animation, Animator and Scripts)
-* Use the singelton pattern
-* Spawn objects
-* Use UI elements and manipulate UI elements with scrips
-
-
-Copyright by smeerws

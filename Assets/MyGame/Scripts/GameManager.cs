@@ -25,14 +25,13 @@ public class GameManager : MonoBehaviour
         gameOverPanel.SetActive(true);
     }
 
-    void StopScrolling()
+    private static void StopScrolling()
     {
         TextureScroll[] scrollingObjects = FindObjectsOfType<TextureScroll>();
 
         foreach(TextureScroll item in scrollingObjects)
         {
             item.scroll = false;
-            Debug.Log(item.name);
         }
     }
 

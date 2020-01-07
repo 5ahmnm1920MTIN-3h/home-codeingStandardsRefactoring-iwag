@@ -19,11 +19,12 @@ public class Obstacle : MonoBehaviour
         {
             Destroy(gameObject);
         }
-            //if obstacle's position x is < -15f it will be destroyed
-            if (transform.position.x > OFFSET)
-            {
-                Destroy(gameObject);
-            }
+
+        //if obstacle's position x is < -15f it will be destroyed
+        if (transform.position.x > OFFSET)
+        {
+            Destroy(gameObject);
+        }
     }
 
     private void FixedUpdate()

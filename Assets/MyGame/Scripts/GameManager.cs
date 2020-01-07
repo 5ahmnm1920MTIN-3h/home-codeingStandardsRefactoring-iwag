@@ -7,7 +7,7 @@ public class GameManager : MonoBehaviour
     public static GameManager instance;
     public GameObject gameOverPanel;
     public Text scoreText;
-    string defaultText;
+    
     int score = 0;
 
     private void Awake()
@@ -16,16 +16,6 @@ public class GameManager : MonoBehaviour
         {
             instance = this;
         }
-    }
-
-    void Start()
-    {
-        Debug.Log("in Start");   
-    }
-
-    void Update()
-    {
-        Debug.Log("in Update");
     }
 
     public void GameOver()

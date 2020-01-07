@@ -213,3 +213,9 @@ Only one level is implemented.
 
 
 Copyright by smeerws
+
+---
+## References
+[Leonhard Schnaitls](https://github.com/5ahmnm1920MTIN-3h/home-codeingStandardsRefactoring-lschnaitl) Projekt wurde als Ressource genutzt.
+
+(c) Ida Wagenhofer

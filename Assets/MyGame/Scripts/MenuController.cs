@@ -1,11 +1,13 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class MenuController : MonoBehaviour{
-    public void Play(){
-        SceneManager.LoadScene("MainScene");
+public class MenuController : MonoBehaviour
+{
+    private const string MAIN_SCENE_NAME = "MainScene";
+
+    public void Play()
+    {
+        SceneManager.LoadScene(MAIN_SCENE_NAME);
     }
 
     public void Exit()
